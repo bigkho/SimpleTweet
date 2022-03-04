@@ -14,10 +14,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RestClientTemplateKotlin">
         <activity
-            android:name=".TimelineActivity"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme"
+            android:name=".ComposeActivity"
             android:exported="false" />
+        <activity
+            android:name=".TimelineActivity"
+            android:exported="false"
+            android:label="@string/app_name" />
         <activity
             android:name=".LoginActivity"
             android:label="@string/app_name"

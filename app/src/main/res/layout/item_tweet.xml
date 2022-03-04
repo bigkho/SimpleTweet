@@ -10,18 +10,17 @@
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_margin="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
         android:id="@+id/tvUsername"
-        android:textColor="@color/teal_200"
+        android:textColor="#349beb"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:textSize="22sp"
+        android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/ivProfileImage"
         app:layout_constraintTop_toTopOf="parent"
@@ -32,7 +31,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:textSize="16dp"
+        android:textSize="15sp"
+        android:autoLink="all"
+        android:linksClickable="true"
         app:layout_constraintTop_toBottomOf="@id/tvUsername"
         app:layout_constraintStart_toEndOf="@+id/ivProfileImage"
         app:layout_constraintHorizontal_bias="0.0"
@@ -57,5 +58,15 @@
         android:background="?android:attr/listDivider"
         app:layout_constraintTop_toBottomOf="@+id/tvTweetBody"
         tools:layout_editor_absoluteX="1dp" />
+
+    <TextView
+        android:id="@+id/tvScreenName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="\@screenname"
+        android:textSize="13sp"
+        app:layout_constraintStart_toEndOf="@+id/tvUsername"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
